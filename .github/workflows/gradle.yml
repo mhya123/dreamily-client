@@ -32,12 +32,4 @@ jobs:
       uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
       with:
         arguments: build
- steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
 
-    - name: Set executable permissions for gradlew
-      run: chmod +x /path/to/your/gradlew
-
-    - name: Build with Gradle
-      run: ./path/to/your/gradlew build
